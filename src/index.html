@@ -6,6 +6,53 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Jost:wght@200;300;500&family=Lobster&display=swap');
+  *{
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+  }
+  html, body{
+      margin: 0;
+      padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited,a:link{color: initial;}
+  .container-wide{
+     width: 100%;
+     max-width: 1480px;
+     margin: auto;
+  }
+  .flexWRAP{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexR{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flexC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .width_half{
+    width: 50%;
+  }
+  .fullHG{
+    height: 100vh;
+  }
+
+@media screen and (max-width: 767px) {
+  .container-wide{
+    padding: 20px;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
   <app-root></app-root>

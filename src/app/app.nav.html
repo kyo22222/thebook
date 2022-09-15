@@ -1,0 +1,82 @@
+<style>
+    .nav-container{
+        position: fixed;
+        bottom: 40px;
+        left: calc(50% - 30px);
+    }
+    ol{
+        position: absolute;
+        top: -95px;
+        width: 100px;
+        left: calc(50% - 50px);
+        margin: 0;
+        padding: 0;
+        transition: all 0.3s ease;
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    ol.on{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+    }
+    li a{
+        font-size: 18px;
+    }
+    .theBALL{
+        background-color: rgba(0,0,0,1);
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s ease;
+    }
+    .theBALL.on{
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    /******bread******/
+    .hamburger{
+        padding: 20px 15px;
+    }
+    .hamburger-box{
+        width: 30px;
+        height: 20px;
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        border-radius: 0px;
+        height: 2px;
+        width: 30px;
+    }
+    .hamburger--elastic .hamburger-inner:before{
+        top: 8px;
+    }
+    .hamburger--elastic .hamburger-inner:after{
+        top: 16px;
+    }
+    .hamburger--elastic.is-active .hamburger-inner:after{
+        top: 20px;
+    }
+</style>
+<div class="nav-container">
+    <ol [ngClass]="isActive ? 'on' : '' ">
+        <li>
+            <a routerLink="">HOME</a>
+        </li>
+        <li>
+            <a routerLink="">RESUME</a>
+        </li>
+        <li>
+            <a routerLink="/portfolio">PORTFOLIO</a>
+        </li>
+    </ol>
+    <div class="theBALL" [ngClass]="isActive ? 'on' : '' ">
+        <div class="hamburger hamburger--elastic js-hamburger" [ngClass]="isActive ? 'is-active' : '' " (click)="isActive = !isActive">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+</div>
