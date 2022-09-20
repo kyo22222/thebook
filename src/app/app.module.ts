@@ -27,5 +27,5 @@ import { experience_compo } from './app.pagetwo';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  console = console.log("TO DO: resume(toggle class [name, lang, email, git link | edcu | expri | skill]), portfolio(route to another page), ng-particle(bg), new color scheme");
+  //console = console.log("TO DO: resume(toggle class [name, lang, email, git link | edcu | expri | skill]), portfolio(route to another page), ng-particle(bg), new color scheme");
 }

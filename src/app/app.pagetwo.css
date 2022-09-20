@@ -1,0 +1,26 @@
+.swiper-slide{
+    margin-bottom: 20px;
+    height: 400px !important;
+}
+
+.dis_box{
+    padding: 15px;
+    background-color: #f6f6f6;
+    height: 100%;
+}
+.porthead{
+    font-size: 18px;
+    margin: 5px 0;
+}
+.discript{
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 767px) {
+    .swiper-slide{
+        margin-bottom: 20px;
+        height: auto !important;
+    }
+}

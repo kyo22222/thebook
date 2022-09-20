@@ -2,10 +2,10 @@
 .resume_bg_glass{
     /* From https://css.glass */
     /* background: rgba(50, 50, 50, 0.2); */
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
     position: fixed;
     right: 0;
@@ -26,15 +26,17 @@
     padding: 0 8%;
     width: 100%;
 }
+.td.header h1{
+    transform: translateY(-1.5em);
+}
 .td:first-child{
-    width: 40%;
+    width: 20%;
+}
+.td:nth-child(2){
+    width: 22%;
 }
 .td:last-child{
-    width: 60%;
-}
-h1, h2 ,h3{
-    font-family: 'Arvo', serif;
-    margin: 0;
+    width: 58%;
 }
 p.spacer{
     height: 10px;
@@ -57,10 +59,35 @@ p{
 p a{
     color:#747474;
 }
+
+@media (max-width: 767px) {
+    .resume_bg_glass{
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .td-contain, .resume_bg_glass.see{
+        display: block;
+    }
+    .td{
+        width: 100% !important;
+        padding: 10px 0;
+    }
+    .td.header h1{
+        transform: translateY(0em);
+    }
+    .td:first-child{
+        padding-top: 2em;
+    }
+    .td:last-child{
+        padding-bottom: 2em;
+    }
+}
 </style>
 <div class="resume_bg_glass flexC fullHG" [ngClass]="resume_tog ? 'see':''">
-
+    
     <div class="td-contain flexR">
+        
+        <div class="td header"><h1>Resume</h1></div>
         <div class="td">
             <h2>Info {{resume_tog}}</h2>
             <p><strong>Language:</strong><br>Cantonese / English</p>
@@ -72,12 +99,14 @@ p a{
             <h2>Skills</h2>
             <ul>
                 <li>JQUERY</li>
-                <li>SCSS</li>
+                <li>SASS</li>
                 <li>JAVASCRIPT</li>
                 <li>TYPESCRIPT</li>
                 <li>AngularJS</li>
                 <li>Angular</li>
                 <li>REACT</li>
+                <li>Boostrap</li>
+                <li>Foundation</li>
             </ul>
 
             <p class="spacer">&nbsp;</p>
@@ -94,20 +123,20 @@ p a{
         <div class="td">
             <h2>Experience</h2>
             <div>
-                <p><strong>2012 - Present</strong> - <a href="http://www.locusin.com/locus/" target="_blank">LOCUS</a><br>Joy Duty : MINISITE, EDM, HTML5 banner</p>
+                <p><strong>2012 - Present</strong> - <a href="http://www.locusin.com/locus/" target="_blank">LOCUS</a><br>Title : Front End Web Developer<br>Joy Duty : MINISITE, EDM, HTML5 banner</p>
             </div>
             <div>
-                <p><strong>2010 - 2012</strong> - <a>AsiaTravel.com</a><br>Joy Duty : MINISITE, EDM, Paint AD</p>
+                <p><strong>2011 - 2012</strong> - <a>AsiaTravel.com</a><br>Title : Web Designer<br>Joy Duty : MINISITE, EDM, Paint AD</p>
             </div>
 
             <p class="spacer">&nbsp;</p>
 
             <h2>Education</h2>
             <div>
-                <p><strong>2012 - Present</strong> - <a href="http://www.locusin.com/locus/" target="_blank">LOCUS</a><br>Joy Duty : MINISITE, EDM, HTML5 banner</p>
+                <p><strong>2008 - 2009</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Higher Diploma in Computer Games and Design (Animation)</p>
             </div>
             <div>
-                <p><strong>2010 - 2012</strong> - <a>AsiaTravel.com</a><br>Joy Duty : MINISITE, EDM, Paint AD</p>
+                <p><strong>2006 - 2008</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Diploma in Computer Games & Animation</p>
             </div>
             
         </div>

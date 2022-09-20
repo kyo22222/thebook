@@ -22,18 +22,26 @@ h3{
     text-align: justify;
 }
 
+.container-wide.flexWRAP.fullHG{
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
     .namebox, .letterbox{
         width : 100%;
     }
     .namebox{
         text-align: center;
-        height: 16.6666667vh;
+        height: auto;
     }
     h1{
         font-size: 56px;
     }
     h3{
         font-size: 22px;
+    }
+    .container-wide.flexWRAP.fullHG{
+        justify-content: center;
+        height: auto;
     }
 }

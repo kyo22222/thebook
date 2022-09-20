@@ -1,6 +1,5 @@
 <nav (togAct)="emittedDataByChild($event)"></nav>
-<!--resume [ngClass] = "resu_onoff ? 'is-active':'' "></resume-->
-<resume [resume_tog]="resu_onoff"></resume>
+<resume [resume_tog]="resu_onoff" [ngClass] = "resu_onoff ? 'is-active':'' "></resume>
 <div>
     <router-outlet></router-outlet>
 </div>

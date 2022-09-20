@@ -10,7 +10,7 @@ SwiperCore.use([Virtual, Navigation, Scrollbar]);
 @Component({
   selector: 'experience',
   templateUrl: './app.pagetwo.html',
-  styleUrls: ['pageone.css', '../../node_modules/swiper/swiper-bundle.css'],
+  styleUrls: ['app.pagetwo.css', '../../node_modules/swiper/swiper-bundle.css'],
   encapsulation: ViewEncapsulation.None
 })
 
@@ -18,10 +18,17 @@ SwiperCore.use([Virtual, Navigation, Scrollbar]);
 export class experience_compo{
   //, '../../node_modules/swiper/swiper-bundle.css'
     config: SwiperOptions = {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        navigation: false,
-        pagination: { clickable: false },
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        autoHeight: false,
         scrollbar: { draggable: true },
+        breakpoints: {
+          768: {
+            slidesPerView: 3.3,
+          },
+          1199: {
+            slidesPerView: 4.3,
+          }
+        },
      };
 }

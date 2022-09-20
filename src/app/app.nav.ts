@@ -15,7 +15,11 @@ export class nav_compo{
       //console.log(this.isActive);
     }
     toggleRESU(){
-      this.showRESU = !this.showRESU;
+      this.showRESU = !this.showRESU;//toggle
+      this.togAct.emit(this.showRESU);
+    }
+    toggleRESU_false(){
+      this.showRESU = false;
       this.togAct.emit(this.showRESU);
     }
 
