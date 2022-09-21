@@ -21,6 +21,9 @@ h3{
 .letterbox{
     text-align: justify;
 }
+.letterbox p{
+    margin: 0;
+}
 
 .container-wide.flexWRAP.fullHG{
     justify-content: space-between;
@@ -33,6 +36,8 @@ h3{
     .namebox{
         text-align: center;
         height: auto;
+        background-color: #000;
+        color: #fd0;
     }
     h1{
         font-size: 56px;
