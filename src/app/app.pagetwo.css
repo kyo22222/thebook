@@ -18,6 +18,9 @@
     width: 100% !important;
 }
 
+img{
+    border: 1px solid #000;
+}
 .dis_box{
     padding: 25px;
     background-color: #f6f6f6;
@@ -51,6 +54,17 @@
 @media (max-width: 767px) {
     .swiper-slide{
         margin-bottom: 20px;
-        height: auto !important;
+        height: 320px !important;
+    }
+    .discript{
+        font-size: 14px;
+    }
+    .porthead {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .porthead:after{
+        width: 15px;
+        height: 15px;
     }
 }
