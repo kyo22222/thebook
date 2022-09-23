@@ -36,6 +36,15 @@ h3{
     display: inline-block;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 1024px) {
+    .namebox, .letterbox{
+        width : calc(50% - 20px);
+        padding: 20px;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
     .namebox, .letterbox{
         width : 100%;
