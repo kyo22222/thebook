@@ -23,11 +23,11 @@ export class experience_compo{
         autoHeight: false,
         scrollbar: { draggable: true },
         breakpoints: {
-          768: {
-            slidesPerView: 3.3,
-          },
+          // 768: {
+          //   slidesPerView: 3.3,
+          // },
           1199: {
-            slidesPerView: 4.3,
+            slidesPerView: 2.3,
           }
         },
      };
