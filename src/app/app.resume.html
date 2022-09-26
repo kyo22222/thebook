@@ -2,8 +2,11 @@
 .resume_bg_glass{
     /* From https://css.glass */
     /* background: rgba(50, 50, 50, 0.2); */
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* background: rgba(255, 255, 255, 0.85); */
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    background-color: rgba(255,255,255,0.8);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
@@ -11,10 +14,11 @@
     right: 0;
     top: 0;
     z-index: 2;
-    height: 100vh;
+    height: 100%;
     width: 50%;
     transition: all 0.6s ease;
     transform: translateX(100%);
+    overflow-y: scroll;
 }
 /* .is-active .resume_bg_glass.see{
     transform: translateX(0%);
@@ -23,9 +27,21 @@
     transform: translateX(0%);
 }
 h2{
-    border-bottom: 1px solid #000;
     display: inline;
+    position: relative;
 }
+h2:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 93%;
+    height: 100%;
+    background-color: #fd0;
+    z-index: -1;
+    transform: skewX(-3deg) translateX(7px) rotate(-1deg);
+}
+
 .td-contain{
     padding: 0 8%;
     width: 100%;
@@ -42,6 +58,7 @@ h2{
 .td:last-child{
     width: 58%;
 }
+
 p.spacer{
     height: 10px;
     margin: 0;
@@ -64,6 +81,33 @@ p{
 p a{
     color:#008bff;
 }
+
+ul.timeline{
+    border-left: 1px dashed #d2d2d2;
+    margin-left: 10px;
+    width: calc(100% - 10px);
+}
+ul.timeline li{
+    position: relative;
+    margin-left: 20px;
+}
+ul.timeline li:before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    background-color: #fd0;
+    border: 1px solid #000;
+    width: 7px;
+    height: 7px;
+}
+
+@media (max-height: 768px) {
+    .resume_bg_glass{
+        display: block;
+    }
+}
+
 @media (max-width: 1600px) {
     .resume_bg_glass{
         width: 62.5%;
@@ -104,9 +148,14 @@ p a{
         display: inline-block;
         margin-right: 15px;
     }
+    ul.timeline li p{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }
 </style>
 <div class="resume_bg_glass flexC fullHG" [ngClass]="resume_tog ? 'see':''">
+    
     
     <div class="td-contain flexR">
         
@@ -144,22 +193,30 @@ p a{
         </div>
         <div class="td">
             <h2>Work Experience</h2>
-            <div>
+            <ul class="timeline">
+                <li><p><strong>2012 - Present</strong> - <a href="http://www.locusin.com/locus/" target="_blank">LOCUS</a><br>Title : Front End Web Developer<br>Joy Duty : MINISITE, EDM, HTML5 banner</p></li>
+                <li><p><strong>2011 - 2012</strong> - <a>AsiaTravel.com</a><br>Title : Web Designer<br>Joy Duty : MINISITE, EDM, Paint AD</p></li>
+            </ul>
+            <!--div>
                 <p><strong>2012 - Present</strong> - <a href="http://www.locusin.com/locus/" target="_blank">LOCUS</a><br>Title : Front End Web Developer<br>Joy Duty : MINISITE, EDM, HTML5 banner</p>
             </div>
             <div>
                 <p><strong>2011 - 2012</strong> - <a>AsiaTravel.com</a><br>Title : Web Designer<br>Joy Duty : MINISITE, EDM, Paint AD</p>
-            </div>
+            </div-->
 
             <p class="spacer">&nbsp;</p>
 
             <h2>Education</h2>
-            <div>
+            <ul class="timeline">
+                <li><p><strong>2008 - 2009</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Higher Diploma in Computer Games and Design (Animation)</p></li>
+                <li><p><strong>2006 - 2008</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Diploma in Computer Games & Animation</p></li>
+            </ul>
+            <!--div>
                 <p><strong>2008 - 2009</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Higher Diploma in Computer Games and Design (Animation)</p>
             </div>
             <div>
                 <p><strong>2006 - 2008</strong> - <strong>Hong Kong Institute of Vocational Education</strong><br>Diploma in Computer Games & Animation</p>
-            </div>
+            </div-->
             
         </div>
     </div>

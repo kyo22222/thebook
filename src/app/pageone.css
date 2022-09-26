@@ -1,5 +1,5 @@
 .namebox, .letterbox{
-    width : calc(50% - 120px);
+    width : calc(50% - 80px);
     padding: 20px;
 }
 h1{
@@ -9,12 +9,17 @@ h1{
     letter-spacing: -0.03em;
     font-weight: 400;
     font-family: 'Arvo', serif;
+    border-bottom: 1px #000 dashed;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: fit-content;
 }
 h3{
-    font-size: 30px;
+    font-size: 35px;
     margin: 0;
     line-height: 0.8em;
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Array', sans-serif;
     font-weight: 400;
     letter-spacing: 0.02em;
 }
