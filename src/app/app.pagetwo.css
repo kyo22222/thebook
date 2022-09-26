@@ -79,8 +79,7 @@ img{
 
 @media (max-width: 767px) {
     .swiper-slide{
-        margin-bottom: 180px;
-        height: 220px !important;
+        margin-bottom: 30px;
     }
     .dis_box{
         position:relative;
@@ -88,6 +87,7 @@ img{
         transform: translateY(0%);
         border-radius: 0 0 0 20px;
         opacity: 1;
+        height: 220px;
     }
     .discript{
         font-size: 14px;
