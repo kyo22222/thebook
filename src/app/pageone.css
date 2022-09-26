@@ -53,6 +53,7 @@ h3{
 @media screen and (max-width: 767px) {
     .namebox, .letterbox{
         width : 100%;
+        text-align: center;
     }
     .namebox{
         text-align: center;
