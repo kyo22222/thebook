@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'resume',
@@ -7,6 +7,15 @@ import { Component, Input} from '@angular/core';
 })
 
 export class resume_compo{
+  toggleRESU(){
+    this.resume_tog = !this.resume_tog;//toggle
+    this.togAct.emit(this.resume_tog);
+  }
+
+  //output
+  @Output() togAct = new EventEmitter(); 
+  constructor() { }
+  ngOnInit() {}
 
   @Input()
   //myName!: string;
