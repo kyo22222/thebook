@@ -27,7 +27,7 @@ export class experience_compo{
           //   slidesPerView: 3.3,
           // },
           1199: {
-            slidesPerView: 2.3,
+            slidesPerView: 2.5,
           }
         },
      };

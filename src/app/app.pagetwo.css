@@ -1,5 +1,5 @@
 .swiper-slide{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     height: auto !important;
 }
 .swiper-scrollbar, .swiper-scrollbar-drag{
@@ -27,16 +27,18 @@ img{
     top: 0;
     left: 0;
     padding: 25px;
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     height: 100%;
     width: 100%;
     transition: all 0.3s ease;
     opacity: 0;
+    transform: translateY(20px);
 }
 .swiper-slide:hover .dis_box{
     opacity: 1;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    transform: translateY(0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .porthead{
     font-size: 24px;
