@@ -47,6 +47,9 @@ h3{
         width : calc(50% - 20px);
         padding: 20px;
     }
+    .container-wide.flexWRAP.fullHG h1{
+        font-size: 60px;
+    }
 }
 
 
