@@ -86,9 +86,22 @@ p a{
     color:#008bff;
 }
 .ovf_y{
-    padding-left: 10px;
-    height: 600px;
+    height: 400px;
     overflow-y: scroll;
+}
+/* width */
+.ovf_y::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+.ovf_y::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 0px;
+}
+/* Handle */
+.ovf_y::-webkit-scrollbar-thumb {
+  background: #fd0; 
+  border-radius: 0px;
 }
 
 ul.timeline{
