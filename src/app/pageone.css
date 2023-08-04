@@ -74,6 +74,7 @@ h3{
     }
     .container-wide.flexWRAP.fullHG{
         justify-content: center;
-        height: auto;
+        height: 100dvh;
+        flex-direction: column;
     }
 }
