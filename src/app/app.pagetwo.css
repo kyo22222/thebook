@@ -69,17 +69,17 @@ img{
     position: absolute;
     content: '';
     display: inline-block;
-    left: -10px;
-    top: -4px;
+    left: -5px;
+    top: -10px;
     background-image: url(../assets/svg/link.svg);
     background-size: cover;
     width: 40px;
     height: 40px;
     transition: all 0.3s ease-in;
+    transform: rotate(360deg) scale(0.8);
 }
-
 .yelbtn:hover:after {
-    transform: rotate(360deg) scale(1.01);
+    transform: rotate(360deg) scale(0.8);
 }
 
 @media (max-width: 1600px) {
