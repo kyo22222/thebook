@@ -61,8 +61,10 @@ h3{
         border-radius: 12px;
     }
     h1{
-        margin: 20px auto;
         font-size: 70px;
+    }
+    pageone h1{
+        margin: 20px auto;
     }
     h3{
         font-size: 22px;
