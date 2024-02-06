@@ -73,7 +73,7 @@ h3{
         font-size: 22px;
     }
     .container-wide.flexWRAP.fullHG{
-        justify-content: center;
+        justify-content: flex-start;
         height: 100dvh;
         flex-direction: column;
     }
